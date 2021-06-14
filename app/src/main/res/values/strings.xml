@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">LessonWork</string>
-    <string name="ActivityName">Второе активити</string>
+    <string name="clickCount">Counter %d</string>
+    <string name="ClickNum">ClickNum</string>
 </resources>
