@@ -22,6 +22,12 @@ private int clicks = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        if(savedInstanceState == null){
+
+        }else {
+            clicks = savedInstanceState.getInt(ARG_COUNT,clicks);
+        }
+
 
         clickCount = findViewById(R.id.count_msg);
         updateCount();
@@ -35,7 +41,6 @@ private int clicks = 0;
             }
         });
     }
-
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
