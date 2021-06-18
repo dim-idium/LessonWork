@@ -22,6 +22,9 @@ private int clicks = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+
+
+
         if(savedInstanceState == null){
 
         }else {
