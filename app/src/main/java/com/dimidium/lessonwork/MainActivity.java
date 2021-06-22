@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                positionNamber++;
                 position.setText(Integer.toString(positionNamber));
             }
         });
@@ -37,9 +38,8 @@ public class MainActivity extends AppCompatActivity {
         buttonDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                positionNamber--;
                 position.setText(Integer.toString(positionNamber+1));
-
-
             }
         });
 
