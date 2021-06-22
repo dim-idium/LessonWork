@@ -23,25 +23,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button buttonUp = findViewById(R.id.goUp);
         Button buttonDown = findViewById(R.id.goDown);
         TextView position = findViewById(R.id.position);
+
+        position.setText(Integer.toString(positionNamber));
 
         buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 positionNamber++;
+
                 position.setText(Integer.toString(positionNamber));
             }
         });
+
 
         buttonDown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 positionNamber--;
-                position.setText(Integer.toString(positionNamber+1));
+                position.setText(Integer.toString(positionNamber));
             }
         });
-
     }
 }
