@@ -23,28 +23,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        @SuppressLint("WrongViewCast") Button buttonUp = findViewById(R.id.goUp);
-        @SuppressLint("WrongViewCast") Button buttonDown = findViewById(R.id.goDown);
+        Button buttonUp = findViewById(R.id.goUp);
+        Button buttonDown = findViewById(R.id.goDown);
         TextView position = findViewById(R.id.position);
 
-        buttonUp.setOnClickListener(new View.OnClickListener(){
+        buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                positionNamber ++;
-                updateCount();
-            }
-      });
-        buttonDown.setOnClickListener(new View.OnClickListener() {
-           @Override
-            public void onClick(View v) {
-                positionNamber --;
-               updateCount();
+                position.setText(Integer.toString(positionNamber));
             }
         });
 
-        private void updateCount() {
-            position.setText(positionNamber);
-        }
+        buttonDown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                position.setText(Integer.toString(positionNamber+1));
 
-        }
+
+            }
+        });
+
+    }
 }
