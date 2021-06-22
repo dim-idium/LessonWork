@@ -31,14 +31,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 positionNamber ++;
+                updateCount();
             }
       });
         buttonDown.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
                 positionNamber --;
+               updateCount();
             }
         });
-        position.setText(positionNamber);
+
+        private void updateCount() {
+            position.setText(positionNamber);
+        }
+
         }
 }
