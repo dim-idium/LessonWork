@@ -1,6 +1,8 @@
 package com.dimidium.lessonwork;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,9 +16,11 @@ import android.widget.TextView;
 import java.util.Locale;
 
 
-public class MainActivity extends AppCompatActivity {
 
+public class MainActivity extends AppCompatActivity {
+    TextView position;
     Integer positionNamber = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,18 +28,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
         Button buttonUp = findViewById(R.id.goUp);
         Button buttonDown = findViewById(R.id.goDown);
-        TextView position = findViewById(R.id.position);
+        position = findViewById(R.id.position);
 
-        position.setText(Integer.toString(positionNamber));
+
+        updatePosition ();
+
 
         buttonUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)  {
                 positionNamber++;
-
-                position.setText(Integer.toString(positionNamber));
+                updatePosition ();
             }
         });
 
@@ -44,8 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 positionNamber--;
-                position.setText(Integer.toString(positionNamber));
+                updatePosition ();
             }
         });
+    }
+
+
+    private void updatePosition (){
+        position.setText(Integer.toString(positionNamber));
     }
 }
