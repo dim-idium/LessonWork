@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="7" />
+            android:text="@string/_7" />
 
         <Button
             android:id="@+id/buttonEight"
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="1" />
+            android:text="@string/_1" />
 
         <Button
             android:id="@+id/buttonTwo"
@@ -115,7 +115,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="@string/_2" />
 
         <Button
             android:id="@+id/buttonThree"
@@ -123,7 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="3" />
+            android:text="@string/_3" />
 
         <Button
             android:id="@+id/buttonMinus"
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="-" />
+            android:text="@string/minus" />
     </LinearLayout>
 
     <LinearLayout
@@ -139,20 +139,20 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/decimal"
+            android:id="@+id/buttonClean"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="," />
+            android:text="@string/clean" />
 
         <Button
-            android:id="@+id/num_0"
+            android:id="@+id/buttonNull"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="0" />
+            android:text="@string/_0" />
 
         <Button
             android:id="@+id/buttonResult"
@@ -160,7 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="=" />
+            android:text="@string/resalt" />
 
         <Button
             android:id="@+id/buttonPlus"
@@ -168,7 +168,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="+" />
+            android:text="@string/plus" />
     </LinearLayout>
 
     <Space
